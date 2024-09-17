@@ -2,68 +2,69 @@
 <html lang="en">
 <head>
     <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Set html and body to fill the screen and remove overflow */
-html, body {
-    height: 100%;
-    overflow: hidden;
-}
+        /* Set html and body to fill the screen and remove overflow */
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
 
-/* Container settings */
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 100%;
-    background-color: #1a1a1a;
-    border: 12px solid;
-    border-image: linear-gradient(45deg, red 3.125%, white 3.125%, white 6.25%, red 6.25%, red 9.375%, white 9.375%, white 12.5%, red 12.5%, red 15.625%, white 15.625%, white 18.75%, red 18.75%, red 21.875%, white 21.875%, white 25%, red 25%, red 28.125%, white 28.125%, white 31.25%, red 31.25%, red 34.375%, white 34.375%, white 37.5%, red 37.5%, red 40.625%, white 40.625%, white 43.75%, red 43.75%, red 46.875%, white 46.875%, white 50%, red 50%, red 53.125%, white 53.125%, white 56.25%, red 56.25%, red 59.375%, white 59.375%, white 62.5%, red 62.5%, red 65.625%, white 65.625%, white 68.75%, red 68.75%, red 71.875%, white 71.875%, white 75%, red 75%, red 78.125%, white 78.125%, white 81.25%, red 81.25%, red 84.375%, white 84.375%, white 87.5%, red 87.5%, red 90.625%, white 90.625%, white 93.75%, red 93.75%, red 96.875%, white 96.875%, white) 30; /* Doubled frequency of candy-cane border */
-}
+        /* Container settings */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            height: 100%;
+            width: 100%; /* Ensure it stretches across the viewport */
+            background-color: #1a1a1a;
+            border: 12px solid;
+            border-image: linear-gradient(45deg, red 3.125%, white 3.125%, white 6.25%, red 6.25%, red 9.375%, white 9.375%, white 12.5%, red 12.5%, red 15.625%, white 15.625%, white 18.75%, red 18.75%, red 21.875%, white 21.875%, white 25%, red 25%, red 28.125%, white 28.125%, white 31.25%, red 31.25%, red 34.375%, white 34.375%, white 37.5%, red 37.5%, red 40.625%, white 40.625%, white 43.75%, red 43.75%, red 46.875%, white 46.875%, white 50%, red 50%, red 53.125%, white 53.125%, white 56.25%, red 56.25%, red 59.375%, white 59.375%, white 62.5%, red 62.5%, red 65.625%, white 65.625%, white 68.75%, red 68.75%, red 71.875%, white 71.875%, white 75%, red 75%, red 78.125%, white 78.125%, white 81.25%, red 81.25%, red 84.375%, white 84.375%, white 87.5%, red 87.5%, red 90.625%, white 90.625%, white 93.75%, red 93.75%, red 96.875%, white 96.875%, white) 30;
+        }
 
-/* Text settings */
-.container p {
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    font-family: "Courier New", Courier, monospace;
-}
+        /* Text settings */
+        .container p {
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            font-family: "Courier New", Courier, monospace;
+        }
 
-/* Image container settings */
-.image-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+        /* Image container settings */
+        .image-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
 
-.image-container img {
-    width: 150px; /* Adjust the width as needed */
-    height: auto;
-}
+        .image-container img {
+            max-width: 90vw; /* Ensure logo scales within viewport width */
+            height: auto;
+        }
 
-/* Contact button settings */
-.contact-button {
-    position: absolute;
-    bottom: 20px;
-    background-color: #ff0000;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    text-decoration: none;
-    font-family: "Courier New", Courier, monospace;
-}
+        /* Contact button settings */
+        .contact-button {
+            position: absolute;
+            bottom: 20px;
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: "Courier New", Courier, monospace;
+        }
 
-.contact-button:hover {
-    background-color: #cc0000;
-}
+        .contact-button:hover {
+            background-color: #cc0000;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,7 +75,7 @@ html, body {
     <div class="container">
         <div class="image-container">
             <a>
-                <img src = "Askari white logo.png" style="width:500px; height:auto;">
+                <img src="Askari white logo.png" alt="Askari Logo">
             </a>
         </div>
         <p>Revolutionary technologies to make drones safe.<br>Currently in dark mode.<br><br></p>
